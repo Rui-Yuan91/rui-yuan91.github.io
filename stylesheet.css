@@ -1,3 +1,25 @@
+body.lightOn{
+  background-color: white;
+  color:black;
+}
+body.lightOn svg{
+  fill: pink;
+}
+body.lightOn font{
+  color: #3C003C
+}
+
+body.lightOff{
+  background-color: #000e10;
+  color: whitesmoke;
+}
+body.lightOff svg{
+  fill: whitesmoke;
+}
+body.lightOff font{
+  color:bisque;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -158,3 +180,4 @@ img {
   margin-right: auto;
   padding: 4vh;
 }
+
