@@ -3,7 +3,7 @@ body.lightOn{
   color:black;
 }
 body.lightOn svg{
-  fill: pink;
+  fill: #1E90FF;
 }
 body.lightOn font{
   color: #3C003C
