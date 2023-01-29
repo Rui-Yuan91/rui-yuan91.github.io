@@ -35,7 +35,7 @@ div.my-4.mx-4 a{
   padding:4px;
 }
 
-div.my-4.mx-4 svg{
+div.my-4.mx-4 a svg{
   vertical-align: top;
   height:12px;
 }
