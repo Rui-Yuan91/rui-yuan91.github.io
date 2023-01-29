@@ -30,3 +30,12 @@ body{
   }
 
   .list-group-flush li:first-child { border-top: none; }
+
+div.my-4.mx-4 a{
+  padding:4px;
+}
+
+div.my-4.mx-4 svg{
+  vertical-align: top;
+  height:12px;
+}
