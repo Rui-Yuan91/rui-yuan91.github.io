@@ -1,7 +1,7 @@
 body{
     padding-top: 70px;
 }
-.icon svg{
+  .icon svg{
     height: 30px;
     width: 30px;
   
@@ -10,7 +10,7 @@ body{
     height: 35px;
     width: 35px;
   }
-  
+
   .iconbox{
     height: 45px;
     width: 50px;
@@ -31,11 +31,11 @@ body{
 
   .list-group-flush li:first-child { border-top: none; }
 
-div.my-4.mx-4 a{
+div.blueBadge a{
   padding:4px;
 }
 
-div.my-4.mx-4 a svg{
+svg.videoicon{
   vertical-align: top;
   height:12px;
 }
