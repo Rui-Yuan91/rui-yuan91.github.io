@@ -14950,13 +14950,17 @@ section.container.box {
   border-top: none;
 }
 
-a {
+p.underline-disable a:link {
   text-decoration: none;
+}
+p.underline-disable a:link:hover {
+  text-decoration: underline;
 }
 
 div.blueBadge a {
   padding: 4px;
   background-color: #1565c0;
+  text-decoration: none;
 }
 div.blueBadge a:hover {
   color: white;
