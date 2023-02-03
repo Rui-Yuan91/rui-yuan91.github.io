@@ -14987,7 +14987,7 @@ div.blueBadge a:hover {
   color: white;
 }
 .btn-copy:focus {
-  background-color: green;
+  background-color: #3CB371;
 }
 
 .svg-copy-icon:before {
