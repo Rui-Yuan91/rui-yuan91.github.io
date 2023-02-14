@@ -437,7 +437,21 @@
     var copytoclipboard = function (id) {
       var copyText = document.getElementById(id);
       navigator.clipboard.writeText(copyText.innerHTML.replace(/<br>/g, "").replace(/<span>/g, "").replace(/<\/span>/g, ""));
-    }
+    };
+    welcomeText = `Welcome to the personal website of
+                                    
+    ▄████████ ███    █▄   ▄█  
+  ███    ███ ███    ███ ███  
+  ███    ███ ███    ███ ███▌ 
+ ▄███▄▄▄▄██▀ ███    ███ ███▌ 
+▀▀███▀▀▀▀▀   ███    ███ ███▌ 
+▀███████████ ███    ███ ███  
+  ███    ███ ███    ███ ███  
+  ███    ███ ████████▀  █▀   
+  ███    ███                 
+
+    `
+    console.log(welcomeText);
   </script>
 
 </body>
