@@ -343,7 +343,8 @@
       const timeElapsed = Date.now();
       const today = new Date(timeElapsed);
       textTitle += "_";
-      textTitle += today.toISOString().replace(/-/g, "").replace(/T/g, "").replace(/:/g, "").slice(0, 14);
+      textTitle += today.toLocaleDateString().replace(/\D/g, "");
+      textTitle += today.toLocaleTimeString().replace(/\D/g, "");
       textTitle += ".bib";
       console.log("Download file : ", textTitle);
       link.download = textTitle;
