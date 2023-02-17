@@ -191,14 +191,16 @@
             <b>A Novel Framework for Policy Mirror Descent with General Parametrization and Linear Convergence</b>,
             preprint, 2023.<br>
             <a href="https://arxiv.org/pdf/2301.13139.pdf" target="_blank" class="badge">PDF</a>
-            <a data-bs-toggle="modal" data-bs-target="#ampo_cite" target="_blank" class="badge">Cite</a>
+            <a data-bs-toggle="modal" data-bs-target="#cite_template" target="_blank" class="badge"
+              onclick="citeModalGenerator(ampo_cite)">Cite</a>
             <br><br>
             <i class="svg-text-icon align-middle"></i>
             Rui Yuan, Simon S. Du, Robert M. Gower, Alessandro Lazaric, Lin Xiao.
             <b>Linear Convergence of Natural Policy Gradient Methods with Log-Linear Policies</b>,
             International Conference on Learning Representations (ICLR), 2023.<br>
             <a href="https://arxiv.org/pdf/2210.01400.pdf" target="_blank" class="badge">PDF</a>
-            <a data-bs-toggle="modal" data-bs-target="#npg_cite" target="_blank" class="badge">Cite</a>
+            <a data-bs-toggle="modal" data-bs-target="#cite_template" target="_blank" class="badge"
+              onclick="citeModalGenerator(npg_cite)">Cite</a>
             <a href="files/posters/npg_poster.pdf" target="_blank" class="badge">Poster</a>
             <a href="https://openreview.net/forum?id=-z9hdsyUwVQ" target="_blank" class="badge">ICLR</a>
             <br><br>
@@ -207,7 +209,8 @@
             <b>A general sample complexity analysis of vanilla policy gradient</b>,
             International Conference on Artificial Intelligence and Statistics (AISTATS), 2022. <br>
             <a href="https://arxiv.org/pdf/2107.11433.pdf" target="_blank" class="badge">PDF</a>
-            <a data-bs-toggle="modal" data-bs-target="#pg_cite" target="_blank" class="badge">Cite</a>
+            <a data-bs-toggle="modal" data-bs-target="#cite_template" target="_blank" class="badge"
+              onclick="citeModalGenerator(pg_cite)">Cite</a>
             <a href="files/posters/pg_poster.pdf" target="_blank" class="badge">Poster</a>
             <a href="files/slides/pg_slides.pdf" target="_blank" class="badge">Slides</a>
             <a href="https://proceedings.mlr.press/v151/yuan22a.html" target="_blank" class="badge">AISTATS</a>
@@ -217,7 +220,8 @@
             <b>SAN: Stochastic Average Newton Algorithm for Minimizing Finite Sums</b>,
             International Conference on Artificial Intelligence and Statistics (AISTATS), 2022. <br>
             <a href="https://arxiv.org/pdf/2106.10520.pdf" target="_blank" class="badge">PDF</a>
-            <a data-bs-toggle="modal" data-bs-target="#san_cite" target="_blank" class="badge">Cite</a>
+            <a data-bs-toggle="modal" data-bs-target="#cite_template" target="_blank" class="badge"
+              onclick="citeModalGenerator(san_cite)">Cite</a>
             <a href="https://github.com/nathansiae/Stochastic-Average-Newton" target="_blank" class="badge">Code</a>
             <a href="files/posters/san_poster.pdf" target="_blank" class="badge">Poster</a>
             <a href="files/slides/san_slides.pdf" target="_blank" class="badge">Slides</a>
@@ -230,7 +234,8 @@
             <b>Sketched Newton-Raphson</b>,
             Society for Industrial and Applied Mathematics (SIAM) Journal on Optimization (SIOPT), 2022. <br>
             <a href="https://arxiv.org/pdf/2006.12120.pdf" target="_blank" class="badge">PDF</a>
-            <a data-bs-toggle="modal" data-bs-target="#snr_cite" target="_blank" class="badge">Cite</a>
+            <a data-bs-toggle="modal" data-bs-target="#cite_template" target="_blank" class="badge"
+              onclick="citeModalGenerator(snr_cite)">Cite</a>
             <a href="files/slides/snr_slides.pdf" target="_blank" class="badge"> Slides</a>
             <a href="https://drive.google.com/file/d/1yVyOJupu2w85F1GmQtlJaq0tkydaJ4Zv/view" target="_blank"
               class="badge badge-primary svg-video-icon align-middle"> Video</a>
@@ -271,7 +276,7 @@
   </footer>
 
 
-  <div class="modal fade" id="ampo_cite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  <div class="modal fade" id="cite_template" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -281,149 +286,13 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body ref-bib" id="ampo_cite_text">@misc{alfano2023novel,<br>
-          <span></span>doi = {10.48550/ARXIV.2301.13139},<br>
-          <span></span>author = {Alfano, Carlo and Yuan, Rui and Rebeschini, Patrick},<br>
-          <span></span>title = {A Novel Framework for Policy Mirror Descent with General Parametrization and Linear
-          Convergence},<br>
-          <span></span>publisher = {arXiv},<br>
-          <span></span>year = {2023},<br>
-          }
-        </div>
+        <div class="modal-body" id="cite_template_text" style="white-space: pre-wrap"></div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-copy"
-            onclick="copytoclipboard(document.getElementById('ampo_cite_text').id)"><span
+          <button type="button" class="btn btn-copy" id="cite_template_copy" onclick="copytoclipboard()"><span
               class="svg-copy-icon align-middle"></span> Copy</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='files/cite/ampo_cite.bib'"><span
-              class="svg-download-icon align-middle"></span> Download</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="npg_cite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cite</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body ref-bib" id="npg_cite_text">@inproceedings{yuan2023linear,<br>
-          <span></span>title = {Linear Convergence of Natural Policy Gradient Methods with Log-Linear Policies},<br>
-          <span></span>author = {Rui Yuan and Simon Shaolei Du and Robert M. Gower and Alessandro Lazaric and Lin
-          Xiao},<br>
-          <span></span>booktitle = {International Conference on Learning Representations},<br>
-          <span></span>year = {2023},<br>
-          }
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-copy"
-            onclick="copytoclipboard(document.getElementById('npg_cite_text').id)"><span
-              class="svg-copy-icon align-middle"></span> Copy</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='files/cite/npg_cite.bib'"><span
-              class="svg-download-icon align-middle"></span> Download</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="pg_cite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cite</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body ref-bib" id="pg_cite_text">@InProceedings{yuan2022general,<br>
-          <span></span>title = {A general sample complexity analysis of vanilla policy gradient},<br>
-          <span></span>author = {Yuan, Rui and Gower, Robert M. and Lazaric, Alessandro},<br>
-          <span></span>booktitle = {Proceedings of The 25th International Conference on Artificial Intelligence and
-          Statistics},<br>
-          <span></span>pages = {3332--3380},<br>
-          <span></span>year = {2022},<br>
-          <span></span>volume = {151},<br>
-          <span></span>series = {Proceedings of Machine Learning Research},<br>
-          <span></span>month = {28--30 Mar},<br>
-          <span></span>publisher = {PMLR},<br>
-          }
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-copy"
-            onclick="copytoclipboard(document.getElementById('pg_cite_text').id)"><span
-              class="svg-copy-icon align-middle"></span> Copy</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='files/cite/pg_cite.bib'"><span
-              class="svg-download-icon align-middle"></span> Download</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="san_cite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cite</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body ref-bib" id="san_cite_text">@InProceedings{chen2022san,<br>
-          <span></span>title = {{SAN}: {S}tochastic Average {N}ewton Algorithm for Minimizing Finite Sums},<br>
-          <span></span>author = {Chen, Jiabin and Yuan, Rui and Garrigos, Guillaume and Gower, Robert M.},<br>
-          <span></span>booktitle = {Proceedings of The 25th International Conference on Artificial Intelligence and
-          Statistics},<br>
-          <span></span>pages = {279--318},<br>
-          <span></span>year = {2022},<br>
-          <span></span>volume = {151},<br>
-          <span></span>series = {Proceedings of Machine Learning Research},<br>
-          <span></span>month = {28--30 Mar},<br>
-          <span></span>publisher = {PMLR},<br>
-          }
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-copy"
-            onclick="copytoclipboard(document.getElementById('san_cite_text').id)"><span
-              class="svg-copy-icon align-middle"></span> Copy</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='files/cite/san_cite.bib'"><span
-              class="svg-download-icon align-middle"></span> Download</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="snr_cite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cite</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body ref-bib" id="snr_cite_text">@article{yuan2022sketched,<br>
-          <span></span>author = {Yuan, Rui and Lazaric, Alessandro and Gower, Robert M.},<br>
-          <span></span>title = {Sketched {N}ewton--{R}aphson},<br>
-          <span></span>journal = {SIAM Journal on Optimization},<br>
-          <span></span>volume = {32},<br>
-          <span></span>number = {3},<br>
-          <span></span>pages = {1555-1583},<br>
-          <span></span>year = {2022},<br>
-          }
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-copy"
-            onclick="copytoclipboard(document.getElementById('snr_cite_text').id)"><span
-              class="svg-copy-icon align-middle"></span> Copy</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='files/cite/snr_cite.bib'"><span
-              class="svg-download-icon align-middle"></span> Download</button>
+          <button type="button" class="btn btn-primary" id="cite_template_download" onclick="downloadBib()"
+            formtarget="_blank"><span class="svg-download-icon align-middle"></span>
+            Download</button>
         </div>
       </div>
     </div>
@@ -432,29 +301,42 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
   <script>
-    var copytoclipboard = function (id) {
-      var copyText = document.getElementById(id);
-      navigator.clipboard.writeText(copyText.innerHTML.replace(/<br>/g, "").replace(/<span>/g, "").replace(/<\/span>/g, ""));
-    };
-
-    welcomeText = `Welcome to the personal website of
-                                    
-    ▄████████ ███    █▄   ▄█  
-  ███    ███ ███    ███ ███  
-  ███    ███ ███    ███ ███▌ 
- ▄███▄▄▄▄██▀ ███    ███ ███▌ 
-▀▀███▀▀▀▀▀   ███    ███ ███▌ 
-▀███████████ ███    ███ ███  
-  ███    ███ ███    ███ ███  
-  ███    ███ ████████▀  █▀   
-  ███    ███                 
-  https://rui-yuan91.github.io/
-    `
-    console.log(welcomeText);
     var scrollSpy = new bootstrap.ScrollSpy(document.body, {
       target: '#navbar-example'
+    });
+
+    var copyText;
+    var downloadPath;
+
+    var citeModalGenerator = function (reference) {
+      document.getElementById("cite_template_text").innerText = reference[1];
+      copyText = reference[1];
+      downloadPath = `files/cite/${reference[0]}.bib`;
+    };
+
+    var copytoclipboard = function () {
+      try {
+        navigator.clipboard.writeText(copyText);
+        document.getElementById("cite_template_copy").classList.add("btn-copy-success")
+        setTimeout(() => { document.getElementById("cite_template_copy").classList.remove("btn-copy-success"); }, 2500);
+        ;
+      }
+      catch (err) {
+        console.log('Failed to copy: ', err);
+      }
+    };
+
+    var myModal = document.getElementById("cite_template");
+    myModal.addEventListener("hidden.bs.modal", function () {
+      document.getElementById("cite_template_copy").classList.remove("btn-copy-success");
     })
+
+    var downloadBib = function () {
+      location.href = downloadPath;
+    }
+
   </script>
 
 </body>
