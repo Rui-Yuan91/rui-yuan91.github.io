@@ -315,7 +315,7 @@
     var citeModalGenerator = function (reference) {
       document.getElementById("cite_template_text").innerText = reference[1];
       copyText = reference[1];
-      textTitle = `${reference[0]}.bib`;
+      textTitle = reference[0];
     };
 
     var copytoclipboard = function () {
@@ -340,6 +340,12 @@
       const link = document.createElement("a");
       const file = new Blob([copyText], { type: 'text/plain' });
       link.href = URL.createObjectURL(file);
+      const timeElapsed = Date.now();
+      const today = new Date(timeElapsed);
+      textTitle += "_";
+      textTitle += today.toISOString().replace(/-/g, "").replace(/T/g, "").replace(/:/g, "").slice(0, 14);
+      textTitle += ".bib";
+      console.log("Download file : ", textTitle);
       link.download = textTitle;
       link.click();
       URL.revokeObjectURL(link.href);
