@@ -303,17 +303,19 @@
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script>
+    /* For bootstrap default scroll spy */
     var scrollSpy = new bootstrap.ScrollSpy(document.body, {
       target: '#navbar-example'
     });
 
+    /* generate the modal content when click the copy button */
     var copyText;
-    var downloadPath;
+    var textTitle;
 
     var citeModalGenerator = function (reference) {
       document.getElementById("cite_template_text").innerText = reference[1];
       copyText = reference[1];
-      downloadPath = `files/cite/${reference[0]}.bib`;
+      textTitle = `${reference[0]}.bib`;
     };
 
     var copytoclipboard = function () {
@@ -328,13 +330,19 @@
       }
     };
 
+    /* If user close the modal, this function will set back the button color and icon immediately */
     var myModal = document.getElementById("cite_template");
     myModal.addEventListener("hidden.bs.modal", function () {
       document.getElementById("cite_template_copy").classList.remove("btn-copy-success");
     })
 
     var downloadBib = function () {
-      location.href = downloadPath;
+      const link = document.createElement("a");
+      const file = new Blob([copyText], { type: 'text/plain' });
+      link.href = URL.createObjectURL(file);
+      link.download = textTitle;
+      link.click();
+      URL.revokeObjectURL(link.href);
     }
 
   </script>
