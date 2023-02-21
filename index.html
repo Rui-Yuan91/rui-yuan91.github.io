@@ -310,6 +310,7 @@
     });
 
     /* generate the modal content when click the copy button */
+    /* data for the references are stored in the main.js, in the following form : ["textAbbreviation", `multilineBibInfo`] */
     var copyText;
     var textTitle;
 
@@ -330,12 +331,13 @@
       }
     };
 
-    /* If user close the modal, this function will set back the button color and icon immediately */
+    /* If user close the modal, this function will set the button color and icon immediately to their default value */
     var myModal = document.getElementById("cite_template");
     myModal.addEventListener("hidden.bs.modal", function () {
       document.getElementById("cite_template_copy").classList.remove("btn-copy-success");
     })
 
+    /* generate a bib file with time token */
     var downloadBib = function () {
       const link = document.createElement("a");
       const file = new Blob([copyText], { type: 'text/plain' });
