@@ -313,9 +313,8 @@
     var textTitle;
 
     var citeModalGenerator = function (reference) {
-      document.getElementById("cite_template_text").innerText = reference[1];
-      copyText = reference[1];
-      textTitle = reference[0];
+      [textTitle, copyText] = reference;
+      document.getElementById("cite_template_text").innerText = copyText;
     };
 
     var copytoclipboard = function () {
