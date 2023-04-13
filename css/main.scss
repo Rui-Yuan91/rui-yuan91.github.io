@@ -49,9 +49,6 @@ $primary: #1565c0;
 $nav-pills-link-active-bg: #BBDEFB;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-body {
-  position: relative;
-}
 
 /* section .container .box {
   margin-top: 70px;
@@ -77,6 +74,7 @@ body {
 
 .underline-disable a:link {
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -134,11 +132,12 @@ body {
 }
 
 /* Bootstrap badge is so cute but it is not perfect for a anchor class */
-div.pubLink>a {
+div.pubLink > a {
   margin-right: 2px;
   text-decoration: none;
   background-color: $primary;
   color: white;
+
   &:hover {
     color: white;
     background-color: darken($primary, 10%);
@@ -164,6 +163,7 @@ div.pubLink>a {
   transition: 0.7s;
   color: var(--copy-success-color, white);
   border-color: var(--copy-success-color, $primary);
+
   &:hover {
     background-color: var(--copy-success-background-color-hover, #11519a);
     color: var(--copy-success-color, white);
