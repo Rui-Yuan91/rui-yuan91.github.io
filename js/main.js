@@ -75,3 +75,17 @@ const ampo_cite = ["ampo_cite",
     year = {2023},
 }`
 ];
+
+const thesis_cite = ["thesis_cite",
+    `@phdthesis{yuan2023thesis,
+    TITLE = {{Stochastic Second Order Methods and Finite Time Analysis of Policy Gradient Methods}},
+    AUTHOR = {Yuan, Rui},
+    NUMBER = {2023IPPAT010},
+    SCHOOL = {{Institut Polytechnique de Paris}},
+    YEAR = {2023},
+    MONTH = Mar,
+    TYPE = {Theses},
+    HAL_ID = {tel-04170820},
+    HAL_VERSION = {v1},
+}`
+];
