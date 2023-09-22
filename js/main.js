@@ -67,11 +67,10 @@ const npg_cite = ["npg_cite",
 ];
 
 const ampo_cite = ["ampo_cite",
-    `@misc{alfano2023novel,
-    doi = {10.48550/ARXIV.2301.13139},
-    author = {Alfano, Carlo and Yuan, Rui and Rebeschini, Patrick},
+    `@inproceedings{alfano2023novel,
     title = {A Novel Framework for Policy Mirror Descent with General Parametrization and Linear Convergence},
-    publisher = {arXiv},
+    author = {Carlo Alfano and Rui Yuan and Patrick Rebeschini},
+    booktitle = {Advances in Neural Information Processing Systems},
     year = {2023},
 }`
 ];
