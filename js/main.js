@@ -45,7 +45,7 @@ const san_cite = ["san_cite",
 
 const pg_cite = ["pg_cite",
     `@InProceedings{yuan2022general,
-    title = { A general sample complexity analysis of vanilla policy gradient },
+    title = { A General Sample Complexity Analysis of Vanilla Policy Gradient },
     author = {Yuan, Rui and Gower, Robert M. and Lazaric, Alessandro},
     booktitle = {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
     pages = {3332--3380},
