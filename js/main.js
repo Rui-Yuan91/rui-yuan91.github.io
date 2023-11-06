@@ -68,10 +68,10 @@ const npg_cite = ["npg_cite",
 
 const ampo_cite = ["ampo_cite",
     `@inproceedings{alfano2023novel,
-    title = {A Novel Framework for Policy Mirror Descent with General Parametrization and Linear Convergence},
-    author = {Carlo Alfano and Rui Yuan and Patrick Rebeschini},
-    booktitle = {Advances in Neural Information Processing Systems},
-    year = {2023},
+    title={A Novel Framework for Policy Mirror Descent with General Parameterization and Linear Convergence},
+    author={Carlo Alfano and Rui Yuan and Patrick Rebeschini},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023},
 }`
 ];
 
