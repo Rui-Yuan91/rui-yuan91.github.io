@@ -59,19 +59,19 @@ const pg_cite = ["pg_cite",
 
 const npg_cite = ["npg_cite",
     `@inproceedings{yuan2023linear,
-    title={Linear Convergence of Natural Policy Gradient Methods with Log-Linear Policies},
-    author={Rui Yuan and Simon Shaolei Du and Robert M. Gower and Alessandro Lazaric and Lin Xiao},
-    booktitle={The Eleventh International Conference on Learning Representations },
-    year={2023},
+    title = {Linear Convergence of Natural Policy Gradient Methods with Log-Linear Policies},
+    author = {Rui Yuan and Simon Shaolei Du and Robert M. Gower and Alessandro Lazaric and Lin Xiao},
+    booktitle = {The Eleventh International Conference on Learning Representations },
+    year = {2023},
 }`
 ];
 
 const ampo_cite = ["ampo_cite",
     `@inproceedings{alfano2023novel,
-    title={A Novel Framework for Policy Mirror Descent with General Parameterization and Linear Convergence},
-    author={Carlo Alfano and Rui Yuan and Patrick Rebeschini},
-    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-    year={2023},
+    title = {A Novel Framework for Policy Mirror Descent with General Parameterization and Linear Convergence},
+    author = {Carlo Alfano and Rui Yuan and Patrick Rebeschini},
+    booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
+    year = {2023},
 }`
 ];
 
