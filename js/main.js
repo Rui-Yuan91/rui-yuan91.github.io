@@ -17,6 +17,18 @@ console.log(welcomeText);
 
 /* Reference variables */
 
+const icl_cite = ["icl_cite",
+    `@inproceedings{rossi2024understandingincontextlearning,
+    author = {Rossi, Simone and Yuan, Rui and Hannagan, Thomas},
+    title = {Understanding In-Context Learning in Transformers},
+    booktitle = {ICLR Blogposts 2024},
+    year = {2024},
+    date = {May 7, 2024},
+    note = {https://iclr-blogposts.github.io/2024/blog/understanding-icl/},
+    url  = {https://iclr-blogposts.github.io/2024/blog/understanding-icl/}
+}`
+];
+
 const snr_cite = ["snr_cite",
     `@article{yuan2022sketched,
     author = {Yuan, Rui and Lazaric, Alessandro and Gower, Robert M.},
