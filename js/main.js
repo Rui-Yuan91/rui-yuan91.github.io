@@ -36,7 +36,7 @@ const snr_cite = ["snr_cite",
     journal = {SIAM Journal on Optimization},
     volume = {32},
     number = {3},
-    pages = {1555-1583},
+    pages = {1555--1583},
     year = {2022},
 }`
 ];
@@ -57,7 +57,7 @@ const san_cite = ["san_cite",
 
 const pg_cite = ["pg_cite",
     `@InProceedings{yuan2022general,
-    title = { A General Sample Complexity Analysis of Vanilla Policy Gradient },
+    title = {A General Sample Complexity Analysis of Vanilla Policy Gradient },
     author = {Yuan, Rui and Gower, Robert M. and Lazaric, Alessandro},
     booktitle = {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
     pages = {3332--3380},
